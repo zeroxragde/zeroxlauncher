@@ -1,2 +1,8 @@
 bin/Debug/net8.0-windows/
 bin/Debug/
+.vs/
+*.user
+*.suo
+
+bin/
+obj/
