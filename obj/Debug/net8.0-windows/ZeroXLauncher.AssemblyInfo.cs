@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZeroXLauncher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9adfac3c4e960c31a7622af974e62e6b89d55c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86125727c7b072673fab7cec309ec6b0a0b15b8a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZeroXLauncher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZeroXLauncher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
