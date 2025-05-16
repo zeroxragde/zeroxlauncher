@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "3bESwTxDnKU=",
+  "success": true,
+  "projectFilePath": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\ZeroXLauncher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ragde\\.nuget\\packages\\realtaiizor\\3.8.1.2\\realtaiizor.3.8.1.2.nupkg.sha512",
+    "C:\\Users\\Ragde\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.15\\microsoft.windowsdesktop.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\Ragde\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.15\\microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\Ragde\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.15\\microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512",
+    "C:\\Users\\Ragde\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.15\\microsoft.netcore.app.host.win-x64.8.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}
