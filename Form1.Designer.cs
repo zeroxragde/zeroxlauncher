@@ -28,15 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             dungeonForm1 = new ReaLTaiizor.Forms.DungeonForm();
+            btnClose = new ReaLTaiizor.Controls.ParrotPictureBox();
+            btnPerfil = new ReaLTaiizor.Controls.ParrotPictureBox();
+            cbPerfiles = new ReaLTaiizor.Controls.DungeonComboBox();
             txtConsola = new ReaLTaiizor.Controls.MoonTextBox();
             cbRam = new ReaLTaiizor.Controls.DungeonComboBox();
             btnUpdateJava = new ReaLTaiizor.Controls.ParrotSuperButton();
             btnLaunch = new ReaLTaiizor.Controls.DreamButton();
             txtUser = new ReaLTaiizor.Controls.DungeonTextBox();
             cbVersion = new ReaLTaiizor.Controls.DungeonComboBox();
-            cbPerfiles = new ReaLTaiizor.Controls.DungeonComboBox();
-            parrotPictureBox1 = new ReaLTaiizor.Controls.ParrotPictureBox();
+            imageList1 = new ImageList(components);
             dungeonForm1.SuspendLayout();
             SuspendLayout();
             // 
@@ -44,7 +48,8 @@
             // 
             dungeonForm1.BackColor = Color.Black;
             dungeonForm1.BorderColor = Color.FromArgb(38, 38, 38);
-            dungeonForm1.Controls.Add(parrotPictureBox1);
+            dungeonForm1.Controls.Add(btnClose);
+            dungeonForm1.Controls.Add(btnPerfil);
             dungeonForm1.Controls.Add(cbPerfiles);
             dungeonForm1.Controls.Add(txtConsola);
             dungeonForm1.Controls.Add(cbRam);
@@ -65,12 +70,82 @@
             dungeonForm1.Padding = new Padding(20, 56, 20, 16);
             dungeonForm1.RoundCorners = true;
             dungeonForm1.Sizable = true;
-            dungeonForm1.Size = new Size(767, 450);
+            dungeonForm1.Size = new Size(485, 471);
             dungeonForm1.SmartBounds = true;
-            dungeonForm1.StartPosition = FormStartPosition.WindowsDefaultLocation;
+            dungeonForm1.StartPosition = FormStartPosition.CenterScreen;
             dungeonForm1.TabIndex = 0;
             dungeonForm1.Text = "ZeroXLauncher";
             dungeonForm1.TitleColor = Color.FromArgb(223, 219, 210);
+            // 
+            // btnClose
+            // 
+            btnClose.ColorLeft = Color.DodgerBlue;
+            btnClose.ColorRight = Color.DodgerBlue;
+            btnClose.CompositingQualityType = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+            btnClose.FilterAlpha = 200;
+            btnClose.FilterEnabled = false;
+            btnClose.Image = Properties.Resources.close1;
+            btnClose.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
+            btnClose.IsElipse = false;
+            btnClose.IsParallax = false;
+            btnClose.Location = new Point(442, 8);
+            btnClose.Name = "btnClose";
+            btnClose.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            btnClose.Size = new Size(31, 32);
+            btnClose.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            btnClose.TabIndex = 9;
+            btnClose.Text = "parrotPictureBox1";
+            btnClose.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnClose.Click += btnClose_Click;
+            // 
+            // btnPerfil
+            // 
+            btnPerfil.BackgroundImage = Properties.Resources.perfil;
+            btnPerfil.ColorLeft = Color.DodgerBlue;
+            btnPerfil.ColorRight = Color.DodgerBlue;
+            btnPerfil.CompositingQualityType = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+            btnPerfil.FilterAlpha = 200;
+            btnPerfil.FilterEnabled = false;
+            btnPerfil.Image = Properties.Resources.perfil;
+            btnPerfil.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
+            btnPerfil.IsElipse = false;
+            btnPerfil.IsParallax = false;
+            btnPerfil.Location = new Point(418, 165);
+            btnPerfil.Name = "btnPerfil";
+            btnPerfil.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            btnPerfil.Size = new Size(32, 32);
+            btnPerfil.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            btnPerfil.TabIndex = 8;
+            btnPerfil.Text = "parrotPictureBox1";
+            btnPerfil.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnPerfil.Click += btnPerfil_Click;
+            // 
+            // cbPerfiles
+            // 
+            cbPerfiles.BackColor = Color.FromArgb(246, 246, 246);
+            cbPerfiles.ColorA = Color.FromArgb(246, 132, 85);
+            cbPerfiles.ColorB = Color.FromArgb(231, 108, 57);
+            cbPerfiles.ColorC = Color.FromArgb(242, 241, 240);
+            cbPerfiles.ColorD = Color.FromArgb(253, 252, 252);
+            cbPerfiles.ColorE = Color.FromArgb(239, 237, 236);
+            cbPerfiles.ColorF = Color.FromArgb(180, 180, 180);
+            cbPerfiles.ColorG = Color.FromArgb(119, 119, 118);
+            cbPerfiles.ColorH = Color.FromArgb(224, 222, 220);
+            cbPerfiles.ColorI = Color.FromArgb(250, 249, 249);
+            cbPerfiles.DrawMode = DrawMode.OwnerDrawFixed;
+            cbPerfiles.DropDownHeight = 100;
+            cbPerfiles.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbPerfiles.Font = new Font("Segoe UI", 10F);
+            cbPerfiles.ForeColor = Color.FromArgb(76, 76, 97);
+            cbPerfiles.FormattingEnabled = true;
+            cbPerfiles.HoverSelectionColor = Color.Empty;
+            cbPerfiles.IntegralHeight = false;
+            cbPerfiles.ItemHeight = 20;
+            cbPerfiles.Location = new Point(204, 167);
+            cbPerfiles.Name = "cbPerfiles";
+            cbPerfiles.Size = new Size(209, 26);
+            cbPerfiles.StartIndex = 0;
+            cbPerfiles.TabIndex = 7;
             // 
             // txtConsola
             // 
@@ -79,11 +154,11 @@
             txtConsola.BorderStyle = BorderStyle.FixedSingle;
             txtConsola.Font = new Font("Microsoft Sans Serif", 8F);
             txtConsola.ForeColor = Color.Lime;
-            txtConsola.Location = new Point(268, 214);
+            txtConsola.Location = new Point(23, 213);
             txtConsola.Multiline = true;
             txtConsola.Name = "txtConsola";
             txtConsola.ReadOnly = true;
-            txtConsola.Size = new Size(476, 179);
+            txtConsola.Size = new Size(427, 179);
             txtConsola.TabIndex = 6;
             // 
             // cbRam
@@ -122,13 +197,13 @@
             btnUpdateJava.ButtonText = "Update JAVA";
             btnUpdateJava.CornerRadius = 5;
             btnUpdateJava.Horizontal_Alignment = StringAlignment.Center;
-            btnUpdateJava.HoverBackgroundColor = Color.FromArgb(102, 217, 174);
+            btnUpdateJava.HoverBackgroundColor = Color.FromArgb(128, 128, 255);
             btnUpdateJava.HoverTextColor = Color.White;
             btnUpdateJava.ImagePosition = ReaLTaiizor.Controls.ParrotSuperButton.ImgPosition.Left;
-            btnUpdateJava.Location = new Point(628, 59);
+            btnUpdateJava.Location = new Point(334, 412);
             btnUpdateJava.Name = "btnUpdateJava";
             btnUpdateJava.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            btnUpdateJava.SelectedBackColor = Color.LimeGreen;
+            btnUpdateJava.SelectedBackColor = Color.Maroon;
             btnUpdateJava.SelectedTextColor = Color.White;
             btnUpdateJava.Size = new Size(116, 40);
             btnUpdateJava.SuperSelected = false;
@@ -146,9 +221,9 @@
             btnLaunch.ColorD = Color.FromArgb(0, 0, 0, 0);
             btnLaunch.ColorE = Color.FromArgb(25, 255, 255, 255);
             btnLaunch.ForeColor = Color.FromArgb(40, 218, 255);
-            btnLaunch.Location = new Point(505, 159);
+            btnLaunch.Location = new Point(268, 75);
             btnLaunch.Name = "btnLaunch";
-            btnLaunch.Size = new Size(239, 40);
+            btnLaunch.Size = new Size(182, 70);
             btnLaunch.TabIndex = 2;
             btnLaunch.Text = "Lanzar";
             btnLaunch.UseVisualStyleBackColor = true;
@@ -166,7 +241,7 @@
             txtUser.Multiline = false;
             txtUser.Name = "txtUser";
             txtUser.ReadOnly = false;
-            txtUser.Size = new Size(239, 28);
+            txtUser.Size = new Size(175, 28);
             txtUser.TabIndex = 1;
             txtUser.TextAlignment = HorizontalAlignment.Left;
             txtUser.UseSystemPasswordChar = false;
@@ -198,62 +273,23 @@
             cbVersion.StartIndex = 0;
             cbVersion.TabIndex = 0;
             // 
-            // cbPerfiles
+            // imageList1
             // 
-            cbPerfiles.BackColor = Color.FromArgb(246, 246, 246);
-            cbPerfiles.ColorA = Color.FromArgb(246, 132, 85);
-            cbPerfiles.ColorB = Color.FromArgb(231, 108, 57);
-            cbPerfiles.ColorC = Color.FromArgb(242, 241, 240);
-            cbPerfiles.ColorD = Color.FromArgb(253, 252, 252);
-            cbPerfiles.ColorE = Color.FromArgb(239, 237, 236);
-            cbPerfiles.ColorF = Color.FromArgb(180, 180, 180);
-            cbPerfiles.ColorG = Color.FromArgb(119, 119, 118);
-            cbPerfiles.ColorH = Color.FromArgb(224, 222, 220);
-            cbPerfiles.ColorI = Color.FromArgb(250, 249, 249);
-            cbPerfiles.DrawMode = DrawMode.OwnerDrawFixed;
-            cbPerfiles.DropDownHeight = 100;
-            cbPerfiles.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbPerfiles.Font = new Font("Segoe UI", 10F);
-            cbPerfiles.ForeColor = Color.FromArgb(76, 76, 97);
-            cbPerfiles.FormattingEnabled = true;
-            cbPerfiles.HoverSelectionColor = Color.Empty;
-            cbPerfiles.IntegralHeight = false;
-            cbPerfiles.ItemHeight = 20;
-            cbPerfiles.Location = new Point(268, 167);
-            cbPerfiles.Name = "cbPerfiles";
-            cbPerfiles.Size = new Size(100, 26);
-            cbPerfiles.StartIndex = 0;
-            cbPerfiles.TabIndex = 7;
-            // 
-            // parrotPictureBox1
-            // 
-            parrotPictureBox1.ColorLeft = Color.DodgerBlue;
-            parrotPictureBox1.ColorRight = Color.DodgerBlue;
-            parrotPictureBox1.CompositingQualityType = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
-            parrotPictureBox1.FilterAlpha = 200;
-            parrotPictureBox1.FilterEnabled = true;
-            parrotPictureBox1.Image = null;
-            parrotPictureBox1.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
-            parrotPictureBox1.IsElipse = false;
-            parrotPictureBox1.IsParallax = false;
-            parrotPictureBox1.Location = new Point(377, 165);
-            parrotPictureBox1.Name = "parrotPictureBox1";
-            parrotPictureBox1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            parrotPictureBox1.Size = new Size(36, 28);
-            parrotPictureBox1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            parrotPictureBox1.TabIndex = 8;
-            parrotPictureBox1.Text = "parrotPictureBox1";
-            parrotPictureBox1.TextRenderingType = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = Color.Transparent;
+            imageList1.Images.SetKeyName(0, "perfil.png");
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(767, 450);
+            ClientSize = new Size(485, 471);
             Controls.Add(dungeonForm1);
             FormBorderStyle = FormBorderStyle.None;
             MinimumSize = new Size(261, 65);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ZeroXLauncher";
             TransparencyKey = Color.Fuchsia;
             dungeonForm1.ResumeLayout(false);
@@ -270,7 +306,9 @@
         private ReaLTaiizor.Controls.ParrotSuperButton btnUpdateJava;
         private ReaLTaiizor.Controls.DungeonComboBox cbRam;
         private ReaLTaiizor.Controls.MoonTextBox txtConsola;
-        private ReaLTaiizor.Controls.ParrotPictureBox parrotPictureBox1;
+        private ReaLTaiizor.Controls.ParrotPictureBox btnPerfil;
         private ReaLTaiizor.Controls.DungeonComboBox cbPerfiles;
+        private ImageList imageList1;
+        private ReaLTaiizor.Controls.ParrotPictureBox btnClose;
     }
 }

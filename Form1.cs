@@ -5,16 +5,21 @@ using System.Text;
 using System.Text.Json;
 using ZeroXLauncher.controladores;
 using ZeroXLauncher.modelos;
+using ZeroXLauncher.vistas;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ZeroXLauncher
 {
     public partial class Form1 : Form
     {
+        Perfil pl = new Perfil();
+
         public Form1()
         {
             InitializeComponent();
             CargarVersionesMinecraft();
             LlenarOpcionesRam();
+            CargarComboPerfiles();
 
         }
 
@@ -22,7 +27,7 @@ namespace ZeroXLauncher
         {
             cbPerfiles.Items.Clear();
             var nombres = ControladorPerfiles.ObtenerNombresParaComboBox();
-
+            cbPerfiles.Items.Add("Perfil Nuevo...");
             foreach (var nombre in nombres)
                 cbPerfiles.Items.Add(nombre);
 
@@ -303,25 +308,26 @@ namespace ZeroXLauncher
         {
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
             string javaDir = Path.Combine(basePath, "runtime", "java-21");
-            string javaExe = Directory.GetFiles(javaDir, "java.exe", SearchOption.AllDirectories)
-                .FirstOrDefault() ?? "";
-            if (string.IsNullOrEmpty(javaExe) || !File.Exists(javaExe))
-            {
-                EscribirConsola("No se encontró java.exe en la ruta.");
-                return null!;
-            }
-            string versionTxt = Path.Combine(basePath, "runtime", "version.txt");
-            string zipLocal = Path.Combine(basePath, "javaSDK.zip");
 
-            string versionActual = File.Exists(versionTxt) ? File.ReadAllText(versionTxt).Trim() : "";
-            string ultimaVersion = await ObtenerUltimaVersionJava() ?? versionActual;
+            // Intento 1: buscar java.exe
+            string javaExe = Directory.Exists(javaDir)
+                ? Directory.GetFiles(javaDir, "java.exe", SearchOption.AllDirectories).FirstOrDefault() ?? ""
+                : "";
 
-            // Si no hay java o se forza actualización
-            if (forzarActualizacion || !File.Exists(javaExe) || versionActual != ultimaVersion)
+            // Si la carpeta no existe o no hay java, forzamos descarga
+            if (!Directory.Exists(javaDir) || string.IsNullOrEmpty(javaExe) || !File.Exists(javaExe))
             {
+                EscribirConsola("No se encontró Java local. Se intentará descargar.");
+                Directory.CreateDirectory(javaDir); // asegura la ruta
+
+                string versionTxt = Path.Combine(basePath, "runtime", "version.txt");
+                string zipLocal = Path.Combine(basePath, "javaSDK.zip");
+                string versionActual = File.Exists(versionTxt) ? File.ReadAllText(versionTxt).Trim() : "";
+                string ultimaVersion = await ObtenerUltimaVersionJava() ?? versionActual;
+
                 bool exito = false;
 
-                // 1. Si hay jdk.zip local, usarlo
+                // 1. jdk.zip local
                 if (File.Exists(zipLocal))
                 {
                     try
@@ -335,14 +341,14 @@ namespace ZeroXLauncher
                     }
                 }
 
-                // 2. Si falla, intentar Temurin
+                // 2. Temurin
                 if (!exito)
                 {
                     string temurinUrl = $"https://api.adoptium.net/v3/binary/latest/21/ga/windows/x64/jdk/hotspot/normal/eclipse?project=jdk";
                     exito = await DescargarYExtraerJavaDesdeUrl(temurinUrl, javaDir);
                 }
 
-                // 3. Si también falla, usar Google Drive
+                // 3. Google Drive
                 if (!exito)
                 {
                     string googleDrive = "https://drive.google.com/uc?export=download&id=1iDZi7pNeCsUGARFboVMhh9t7H0w6VUqB";
@@ -356,6 +362,16 @@ namespace ZeroXLauncher
                 }
 
                 File.WriteAllText(versionTxt, ultimaVersion);
+
+                // Reintento (singleton-like)
+                javaExe = Directory.GetFiles(javaDir, "java.exe", SearchOption.AllDirectories).FirstOrDefault() ?? "";
+                if (string.IsNullOrEmpty(javaExe) || !File.Exists(javaExe))
+                {
+                    EscribirConsola("Error crítico: Java fue descargado pero no se encontró java.exe.");
+                    return null!;
+                }
+
+                EscribirConsola("Java preparado correctamente.");
             }
 
             return javaExe;
@@ -405,6 +421,64 @@ namespace ZeroXLauncher
             var ok = await PrepararJavaAsync(forzarActualizacion: true);
             if (!string.IsNullOrEmpty(ok))
                 EscribirConsola("Java actualizado correctamente.");
+        }
+        private int ObtenerRamSeleccionado()
+        {
+            if (cbRam.SelectedItem == null)
+                return 2048; // valor por defecto si no hay selección
+
+            string texto = cbRam.SelectedItem.ToString()?.Replace(" GB", "");
+            if (int.TryParse(texto, out int gb))
+                return gb * 1024;
+
+            return 2048;
+        }
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+            string seleccionado = cbPerfiles.SelectedItem?.ToString();
+
+            PerfilLauncher perfil;
+            bool esNuevo = seleccionado == "Perfil Nuevo..." || string.IsNullOrEmpty(seleccionado);
+
+            if (esNuevo)
+            {
+                // Pasar nombre sugerido desde txtUser
+                perfil = new PerfilLauncher
+                {
+                    NombrePerfil = txtUser.Text.Trim()==""?"Jugador" : txtUser.Text.Trim(),
+                    UUID = Guid.NewGuid().ToString(),
+                    VersionMinecraft = cbVersion.SelectedItem?.ToString() ?? "1.20.1",
+                    RamMB = ObtenerRamSeleccionado()
+                };
+            }
+            else
+            {
+                perfil = ControladorPerfiles.ObtenerPerfilPorNombre(seleccionado);
+                if (perfil == null)
+                {
+                    MessageBox.Show("Perfil no encontrado.");
+                    return;
+                }
+            }
+
+            using Perfil editor = new Perfil(perfil);
+            if (editor.ShowDialog() == DialogResult.OK)
+            {
+                var perfilEditado = editor.PerfilEditado;
+
+                if (esNuevo)
+                    ControladorPerfiles.AgregarPerfil(perfilEditado);
+
+                ControladorPerfiles.Guardar();
+                CargarComboPerfiles();
+                cbPerfiles.SelectedItem = perfilEditado.NombrePerfil;
+                EscribirConsola($"Perfil {(esNuevo ? "creado" : "actualizado")}: {perfilEditado.NombrePerfil}");
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
         ///////////////////////////////////////////////////////////////////

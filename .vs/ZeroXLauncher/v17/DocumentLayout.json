@@ -7,44 +7,16 @@
       "RelativeMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|solutionrelative:vistas\\perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|X:\\DESARROLLO\\GIT\\zeroxlauncher\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|x:\\desarrollo\\git\\zeroxlauncher\\vistas\\perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|solutionrelative:vistas\\perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|x:\\desarrollo\\git\\zeroxlauncher\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|x:\\desarrollo\\git\\zeroxlauncher\\controladores\\controladorperfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|solutionrelative:controladores\\controladorperfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|x:\\desarrollo\\git\\zeroxlauncher\\modelos\\perfillauncher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|solutionrelative:modelos\\perfillauncher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|x:\\desarrollo\\git\\zeroxlauncher\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|x:\\desarrollo\\git\\zeroxlauncher\\modelos\\versionmeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|solutionrelative:modelos\\versionmeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|x:\\desarrollo\\git\\zeroxlauncher\\modelos\\librarydownloads.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|solutionrelative:modelos\\librarydownloads.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|x:\\desarrollo\\git\\zeroxlauncher\\modelos\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|solutionrelative:modelos\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|x:\\desarrollo\\git\\zeroxlauncher\\modelos\\artifact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|solutionrelative:modelos\\artifact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|x:\\desarrollo\\git\\zeroxlauncher\\modelos\\downloads.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|solutionrelative:modelos\\downloads.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|X:\\DESARROLLO\\GIT\\zeroxlauncher\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F1099B31-D529-46FF-B1E0-B20BA182D487}|ZeroXLauncher.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,11 +26,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Perfil.cs",
+              "DocumentMoniker": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\vistas\\Perfil.cs",
+              "RelativeDocumentMoniker": "vistas\\Perfil.cs",
+              "ToolTip": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\vistas\\Perfil.cs",
+              "RelativeToolTip": "vistas\\Perfil.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIA2wB0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:09:20.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T15:58:02.709Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -74,122 +71,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ControladorPerfiles.cs",
-              "DocumentMoniker": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\controladores\\ControladorPerfiles.cs",
-              "RelativeDocumentMoniker": "controladores\\ControladorPerfiles.cs",
-              "ToolTip": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\controladores\\ControladorPerfiles.cs",
-              "RelativeToolTip": "controladores\\ControladorPerfiles.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAiwDgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T03:35:53.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PerfilLauncher.cs",
-              "DocumentMoniker": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\modelos\\PerfilLauncher.cs",
-              "RelativeDocumentMoniker": "modelos\\PerfilLauncher.cs",
-              "ToolTip": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\modelos\\PerfilLauncher.cs",
-              "RelativeToolTip": "modelos\\PerfilLauncher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T02:44:30.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LibraryDownloads.cs",
-              "DocumentMoniker": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\modelos\\LibraryDownloads.cs",
-              "RelativeDocumentMoniker": "modelos\\LibraryDownloads.cs",
-              "ToolTip": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\modelos\\LibraryDownloads.cs",
-              "RelativeToolTip": "modelos\\LibraryDownloads.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:09:44.408Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Library.cs",
-              "DocumentMoniker": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\modelos\\Library.cs",
-              "RelativeDocumentMoniker": "modelos\\Library.cs",
-              "ToolTip": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\modelos\\Library.cs",
-              "RelativeToolTip": "modelos\\Library.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:08:57.262Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Artifact.cs",
-              "DocumentMoniker": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\modelos\\Artifact.cs",
-              "RelativeDocumentMoniker": "modelos\\Artifact.cs",
-              "ToolTip": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\modelos\\Artifact.cs",
-              "RelativeToolTip": "modelos\\Artifact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:08:34.595Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Downloads.cs",
-              "DocumentMoniker": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\modelos\\Downloads.cs",
-              "RelativeDocumentMoniker": "modelos\\Downloads.cs",
-              "ToolTip": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\modelos\\Downloads.cs",
-              "RelativeToolTip": "modelos\\Downloads.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:08:17.925Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VersionMeta.cs",
-              "DocumentMoniker": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\modelos\\VersionMeta.cs",
-              "RelativeDocumentMoniker": "modelos\\VersionMeta.cs",
-              "ToolTip": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\modelos\\VersionMeta.cs",
-              "RelativeToolTip": "modelos\\VersionMeta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:06:52.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "X:\\DESARROLLO\\CSharp\\ZeroXLauncher\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\CSharp\\ZeroXLauncher\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T15:58:02.709Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAIAxwBYAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAKsBAAAAAAAAAADgv7kBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T15:31:16.463Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Form1.Designer.cs",
-              "ToolTip": "X:\\DESARROLLO\\GIT\\zeroxlauncher\\Form1.Designer.cs",
-              "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAAP0AAAAAAAAAAAAqwA4BAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T22:34:50.755Z"
+              "WhenOpened": "2025-05-10T15:31:16.463Z",
+              "EditorCaption": ""
             }
           ]
         }
